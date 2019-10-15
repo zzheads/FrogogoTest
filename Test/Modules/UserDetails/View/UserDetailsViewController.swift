@@ -34,6 +34,22 @@ extension UserDetailsViewController: UserDetailsViewInput {
         self.emailTextField.text = model?.email
         self.avatarUrlTextField.text = model?.avatar_url
     }
+    
+    var firstName: String? {
+        return self.firstNameTextField.text
+    }
+    
+    var lastName: String? {
+        return self.lastNameTextField.text
+    }
+    
+    var email: String? {
+        return self.emailTextField.text
+    }
+    
+    var avatarUrl: String? {
+        return self.avatarUrlTextField.text
+    }
 }
 
 // MARK: - ViewControllerable

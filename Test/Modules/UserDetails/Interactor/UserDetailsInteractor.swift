@@ -7,7 +7,6 @@
 //
 
 class UserDetailsInteractor: UserDetailsInteractorInput {
-
     weak var output: UserDetailsInteractorOutput!
 
 }
