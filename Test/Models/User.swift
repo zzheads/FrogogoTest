@@ -71,6 +71,6 @@ extension User {
     }
     
     static func edit(id: Int, model: DataModel) -> Resource<User> {
-        return Resource<User>(endpoint: "users.json/\(id)", method: .patch, parameters: model.toJSON, encoding: JSONEncoding.default)
+        return Resource<User>(endpoint: "users/\(id).json", method: .patch, parameters: model.toJSON, encoding: JSONEncoding.default)
     }
 }

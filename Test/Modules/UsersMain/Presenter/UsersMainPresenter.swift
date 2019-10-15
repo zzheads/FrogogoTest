@@ -81,6 +81,7 @@ extension UsersMainPresenter: UITableViewDataSource & UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.router.edit(user: self.users[indexPath.row], output: self, from: self.view.viewController)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
