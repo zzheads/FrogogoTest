@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="LF6-Ec-hic" customClass="UserCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LF6-Ec-hic" id="C0A-Du-9cj">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2rI-8I-S0y">
+                        <rect key="frame" x="15" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="ArD-bk-uqS"/>
+                            <constraint firstAttribute="width" constant="44" id="agJ-In-d3S"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-lv-HfY">
+                        <rect key="frame" x="74" y="8" width="325" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="UZh-B6-d7h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-hi-BNe">
+                        <rect key="frame" x="74" y="31" width="325" height="17.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17.5" id="pqN-k7-QIb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2rI-8I-S0y" firstAttribute="leading" secondItem="C0A-Du-9cj" secondAttribute="leading" constant="15" id="4pN-SG-VNv"/>
+                    <constraint firstItem="k4F-hi-BNe" firstAttribute="top" secondItem="cxO-lv-HfY" secondAttribute="bottom" constant="3" id="8fb-tV-PrF"/>
+                    <constraint firstAttribute="trailing" secondItem="cxO-lv-HfY" secondAttribute="trailing" constant="15" id="BtU-ez-vQx"/>
+                    <constraint firstItem="k4F-hi-BNe" firstAttribute="trailing" secondItem="cxO-lv-HfY" secondAttribute="trailing" id="EBF-rD-rvh"/>
+                    <constraint firstItem="cxO-lv-HfY" firstAttribute="leading" secondItem="2rI-8I-S0y" secondAttribute="trailing" constant="15" id="Ygk-5a-NhK"/>
+                    <constraint firstAttribute="bottom" secondItem="k4F-hi-BNe" secondAttribute="bottom" constant="11.5" id="due-SS-Gwb"/>
+                    <constraint firstAttribute="bottom" secondItem="2rI-8I-S0y" secondAttribute="bottom" priority="750" constant="8" id="eS3-bL-ADs"/>
+                    <constraint firstItem="2rI-8I-S0y" firstAttribute="top" secondItem="C0A-Du-9cj" secondAttribute="top" priority="750" constant="8" id="ixy-J7-fZK"/>
+                    <constraint firstItem="k4F-hi-BNe" firstAttribute="leading" secondItem="cxO-lv-HfY" secondAttribute="leading" id="p1Z-Er-c1S"/>
+                    <constraint firstItem="cxO-lv-HfY" firstAttribute="top" secondItem="C0A-Du-9cj" secondAttribute="top" constant="8" id="sgx-vb-rxu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="avatarImageView" destination="2rI-8I-S0y" id="TnA-XD-rmx"/>
+                <outlet property="emailLabel" destination="k4F-hi-BNe" id="B40-BX-kGl"/>
+                <outlet property="nameLabel" destination="cxO-lv-HfY" id="hNy-7e-vii"/>
+            </connections>
+            <point key="canvasLocation" x="24.637681159420293" y="87.053571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="1500" height="1500"/>
+    </resources>
+</document>
