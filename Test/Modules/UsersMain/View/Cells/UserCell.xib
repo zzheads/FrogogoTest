@@ -26,7 +26,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-lv-HfY">
                         <rect key="frame" x="74" y="8" width="325" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="UZh-B6-d7h"/>
+                            <constraint firstAttribute="height" priority="750" constant="20" id="UZh-B6-d7h"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
@@ -35,7 +35,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-hi-BNe">
                         <rect key="frame" x="74" y="31" width="325" height="17.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="17.5" id="pqN-k7-QIb"/>
+                            <constraint firstAttribute="height" priority="750" constant="17.5" id="pqN-k7-QIb"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

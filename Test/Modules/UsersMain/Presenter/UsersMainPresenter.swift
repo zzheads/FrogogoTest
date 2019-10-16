@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Nuke
 
 class UsersMainPresenter: NSObject {
     weak var view: UsersMainViewInput!
@@ -72,10 +71,6 @@ extension UsersMainPresenter: UITableViewDataSource & UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserCell.reuseIdentifier, for: indexPath) as! UserCell
         cell.configure(with: self.users[indexPath.row])
-        if let imageUrl = self.users[indexPath.row].avatarUrl {
-            let options = ImageLoadingOptions(placeholder: UIImage(named: "placeholder"), transition: .fadeIn(duration: 0.33))
-            Nuke.loadImage(with: imageUrl, options: options, into: cell.avatarImageView)
-        }
         return cell
     }
     
