@@ -10,6 +10,7 @@ import UIKit
 import Nuke
 
 final class UserCell: UITableViewCell {
+    static let height: CGFloat = 60
     static let reuseIdentifier = String(describing: UserCell.self)
     static let nib = UINib(nibName: reuseIdentifier, bundle: nil)
     static let options = ImageLoadingOptions(placeholder: UIImage(named: "loading"), transition: .fadeIn(duration: 0.33), failureImage: UIImage(named: "notfound"), failureImageTransition: .fadeIn(duration: 0.33))

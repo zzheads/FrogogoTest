@@ -30,7 +30,7 @@ extension UsersMainPresenter: UsersMainViewOutput {
     
     func viewIsReady() {
         let rightButton =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addPressed(_:)))
-        self.view.setupInitialState(title: "Frogogo Users", rightButton: rightButton, dataSource: self)
+        self.view.setupInitialState(title: "Frogogo Users", rightButton: rightButton, dataSource: self, searchDataSource: self)
         self.interactor.getUsers()
     }
 }
@@ -88,5 +88,13 @@ extension UsersMainPresenter: UserDetailsModuleOutput {
     
     func edit(user: User.DataModel, id: Int) {
         self.interactor.edit(user: user, id: id)
+    }
+}
+
+// MARK: - SearchViewDataSource
+extension UsersMainPresenter: SearchViewDataSource {
+    func users(for searchText: String?) -> [User] {
+        guard let searchText = searchText?.lowercased() else { return [] }
+        return self.users.filter { $0.first_name.lowercased().contains(searchText) || $0.last_name.lowercased().contains(searchText) }
     }
 }

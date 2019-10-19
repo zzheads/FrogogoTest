@@ -19,17 +19,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63q-p4-XYH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-gn-rZq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="wtD-Rw-Z0k"/>
+                                        </constraints>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-YS-Jga">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="52" width="414" height="766"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="separatorColor" red="0.46151727440000001" green="0.8405373693" blue="0.74509060380000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="yTQ-YS-Jga" firstAttribute="top" secondItem="HhL-gn-rZq" secondAttribute="bottom" id="4QT-yq-b4w"/>
                                     <constraint firstItem="yTQ-YS-Jga" firstAttribute="leading" secondItem="63q-p4-XYH" secondAttribute="leading" id="I5J-oV-zla"/>
-                                    <constraint firstItem="yTQ-YS-Jga" firstAttribute="top" secondItem="63q-p4-XYH" secondAttribute="top" id="T2c-81-gQD"/>
+                                    <constraint firstAttribute="trailing" secondItem="HhL-gn-rZq" secondAttribute="trailing" id="YIY-js-fit"/>
                                     <constraint firstAttribute="trailing" secondItem="yTQ-YS-Jga" secondAttribute="trailing" id="eBa-yz-4C5"/>
+                                    <constraint firstItem="HhL-gn-rZq" firstAttribute="top" secondItem="63q-p4-XYH" secondAttribute="top" id="ibx-eZ-IeT"/>
+                                    <constraint firstItem="HhL-gn-rZq" firstAttribute="leading" secondItem="63q-p4-XYH" secondAttribute="leading" id="oqw-LB-8Bt"/>
                                     <constraint firstAttribute="bottom" secondItem="yTQ-YS-Jga" secondAttribute="bottom" id="sFE-l7-o8a"/>
                                 </constraints>
                             </view>
@@ -44,6 +52,8 @@
                         <viewLayoutGuide key="safeArea" id="Qvm-7p-Mlu"/>
                     </view>
                     <connections>
+                        <outlet property="searchViewContainer" destination="HhL-gn-rZq" id="ubh-AH-rZS"/>
+                        <outlet property="searchViewHeightConstraint" destination="wtD-Rw-Z0k" id="yCs-bD-l9t"/>
                         <outlet property="tableView" destination="yTQ-YS-Jga" id="K1Y-CN-XoG"/>
                     </connections>
                 </viewController>

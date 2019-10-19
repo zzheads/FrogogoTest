@@ -9,6 +9,6 @@
 import UIKit
 
 protocol UsersMainViewInput: class, Presentable {
-    func setupInitialState(title: String?, rightButton: UIBarButtonItem?, dataSource: UITableViewDataSource & UITableViewDelegate) 
+    func setupInitialState(title: String?, rightButton: UIBarButtonItem?, dataSource: UITableViewDataSource & UITableViewDelegate, searchDataSource: SearchViewDataSource)
     func reloadData()
 }
